@@ -1,0 +1,366 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Noto Sans Kr', sans-serif;
+}
+#wrap {
+    min-width: 1920px;
+}
+/* Safe Area 1280 */
+.w1280 {
+    width: 1280px;
+    margin: 0 auto;
+}
+.w1360 {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+header {
+    height: 698px;
+    background-image: url("../image/header_image1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 24px;
+}
+
+/* 3단 레이아웃 */
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+header .logo_gnb_left {
+    width: 1200px;
+    float: left;
+}
+header .logo_gnb_left .logo {
+    float: left;
+}
+header .logo_gnb_left .logo img {
+    width: 200px;
+    transform: translateY(15px);
+}
+header .logo_gnb_left .gnb {
+    float: right;
+}
+header .logo_gnb_left .gnb li {
+    /* 플롯 */
+    float: left;
+    margin-top: 10px;
+    margin-right: 24px;
+    font-weight: 400;
+}
+header .logo_gnb_left .gnb li:hover {
+    font-size: 24px;
+    font-weight: bold;
+}
+header .search {
+    width: 80px;
+    text-align: right;
+    float: right;
+}
+
+/* ImageText Deco */
+header .img_deco {
+    padding-left: 20px;
+}
+header .img_deco h2 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-top: 140px;
+    line-height: 98px;
+    color: rgb(0, 0, 0);
+    /* -webkit-text-stroke: #000 2px; */
+}
+header .img_deco p {
+    margin-top: 27px;
+    font-size: 14px;
+    color: rgb(255, 249, 249);
+    
+}
+header .img_deco button {
+    width: 167px;
+    height: 48px;
+    background-color: rgb(32, 32, 32);
+    /* margin-top: 10px; */
+}
+header .img_deco button a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Section Cardbox */
+.card_box {
+    background-image: url(../image/header_image2.png);
+    background-size: cover;
+}
+.card_boxs {
+    width: 1363px;
+    display: flex;
+    justify-content: space-between;
+    /* transform: translateY(-80px); */
+    position: relative;
+    top: -80px;
+    z-index: 1;
+}
+
+/* CardText 지워질 내용*/
+.card_box_info {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-40px);
+}
+.card_box_info h2 {
+    color: aliceblue;
+    
+}
+.card_box_info h2 span{
+    font-weight: bold;
+    font-size: 20px;
+}
+.card_box_info p {
+    display: flex;
+    justify-content: right;
+}
+.card_box_info p a img {
+    transform: translateY(3px);
+    margin-left: 10px;
+}
+
+/* Section About Tab */
+.about_us_text {
+    margin-top: 60px;
+    font-size: 36px;
+    text-align: center;
+}
+.about_us .line {
+    width: 110px;
+    height: 2px;
+    border-bottom: 1px solid #dfb166;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.about_us h2 {
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+/* Article Movie */
+.movie {
+    background-color: #979797;
+    width: 100%;
+    height: 560px;
+    /* movie 포지션 */
+    /* position: relative; */
+    margin-bottom: 370px;
+}
+.movie .bg {
+    background-color: #979797;
+    width: 1280px;
+    height: 560px;
+    margin-top: 100px;
+    text-align: center;
+}
+.movie .bg h2 {
+    font-size: 34px;
+    padding-top: 80px;
+}
+.movie .bg p {
+    color: #fff;
+}
+.movie .bg p:nth-child(2) {
+    padding-top: 20px;
+    font-size: 14px;
+}
+.movie .bg p:nth-child(3) {
+    font-size: 18px;
+}
+.movie .bg p:nth-child(5) {
+    font-size: 20px;
+}
+.movie .bg a:nth-child(5) {
+    padding-bottom: 40px;
+}
+.movie .bg a:nth-child(5) img {
+    transform: translateY(5px);
+}
+.movie .bg .line {
+    width: 110px;
+    height: 2px;
+    border-bottom: 1px solid #dfb166;
+    text-align: center;
+    margin: 30px auto 20px;
+}
+.movie .bg .movie_clip {
+    padding-top: 40px;
+    /* 포지션 중앙정렬 = 해당 박스 너비값이 절반을 뺌
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translateX(-50%); */
+    
+}
+
+/* Holiday Collection */
+.holiday {
+    background-image: url(../image/holiday_bg.png);
+    background-size: cover;
+    height: 631px;
+}
+.holiday .holiday_bg {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.holiday .holiday_bg .holiday_article {
+    display: flex;
+    flex-direction: column;
+}
+.holiday .holiday_bg .holiday_article h2{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.holiday .holiday_bg .holiday_article a{
+    margin-bottom: 10px;
+}
+.holiday .holiday_bg .holiday_article .line {
+    width: 110px;
+    height: 2px;
+    border-bottom: 1px solid #dfb166 ;
+    margin: 35px 0;
+}
+.holiday .more_product {
+    text-align: right;
+}
+
+/* Tranding & Review */
+.trandingReview {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 110px;
+}
+.trandingReview h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.trandingReview .tranding li {
+    padding: 40px 0;
+    color: #979797;
+}
+.trandingReview .tranding li:first-child {
+    margin-bottom: 10px;
+}
+.trandingReview .tranding li:nth-child(2),
+.trandingReview .tranding li:nth-child(4) {
+    border-top: 1px solid #746f6f;
+    border-bottom: 1px solid #746f6f;
+}
+.trandingReview .tranding .list {
+    margin-top: 20px;
+}
+.trandingReview .tranding .list p{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.trandingReview .tranding .list p:last-child{
+margin-bottom: 0;
+}
+
+.review .image{
+    display: flex;
+    align-items: center;
+    color: #746f6f;
+    margin-bottom: 10px;
+}
+.review .image img{
+    margin-right: 20px;
+    padding-top: 20px;
+}
+.review li {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #797979;
+}
+.prime {
+    margin-bottom: 100px;
+    padding-top: 40px;
+}
+
+/* C/S */
+.cs {
+    height: 230px;
+    background-color: #dbc295;
+}
+.cs_bg {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+.csLeft h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.csLeft p {
+    color: #fff;
+}
+.csRight button {
+    width: 168px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    background-color: #000;
+}
+.footer_info {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_info article:first-child {
+    color: #979797;
+}
+.footer_info article:last-child {
+    color: #fff;
+}
+.footer_info .f_logo img {
+    margin-bottom: 120px;
+}
+.footer_info .f_logo p:last-child {
+    text-align: right;
+    margin-top: 10px;
+}
+.footer_info .f_menu {
+    display: flex;
+}
+.footer_info .f_menu dl{
+    margin-left: 70px;
+}
+.footer_info .f_menu dl dt {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.footer_info .f_menu dl dd {
+    color: #979797;
+    margin-bottom: 10px;
+}
+.footer_info .f_menu .f_menu4 img {
+    transform: translateY(3px);
+}
+.copy {
+    color: #fff;
+    text-align: center;
+    padding: 120px 0 80px;
+}
