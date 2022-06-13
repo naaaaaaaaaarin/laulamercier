@@ -11,4 +11,3 @@
  - History section : 연도를 클릭하면 해당하는 내용의 텍스트 출력
  - Movie section : 동영상 재생/멈춤 컨트롤 기능
  - tranding section : 각 영역별로 슬라이드 업/다운 기능
- - 
